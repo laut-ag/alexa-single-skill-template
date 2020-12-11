@@ -4,34 +4,33 @@
 
 ### Create Skill
 
-1. Besuche <https://developer.amazon.com/alexa/console/ask/> und einlogge
-2. Klicke **Create New Skill**
-3. Gib das **Skill name** ein
-4. Wähle **Default language** -> **German(DE)** aus
-5. Prüfe dass **Custom** und **Alexa-hosted (Node.js)** ausgewählt sind 
-6. Klicke **Create skill**
+1. Logge dich auf <https://developer.amazon.com/alexa/console/ask/> ein (dazu benötigst du ein Amazon-Konto).
+2. Klicke auf **Create New Skill**
+3. Gib den gewünschten Namen unter **Skill name** ein.
+4. Wähle bei **Default language** -> **German(DE)** aus.
+5. Wähle **Custom** und **Alexa-hosted (Node.js)** aus.
+6. Klicke (rechts oben) auf **Create skill**
 ![Create new skill](./screenshots/create_new_skill_highlight.jpg)
 7. Klicke **Import skill**
 ![choose template](./screenshots/choose_template_highlight.jpg)
-8. Füge <https://github.com/laut-ag/alexa-single-skill-template.git> im Textfeld ein
+8. Füge <https://github.com/laut-ag/alexa-single-skill-template.git> im Textfeld ein.
 9. Klicke **Import**
 ![Import git repo](./screenshots/choose_template_import-dialog_highlight.jpg)
 
 ### Build -> Invocation
 
-1. Gib das **Skill Invocation Name** ein
+1. Gib den Aufruf-Namen unter **Skill Invocation Name** ein.
 2. Klicke **Save Model**
 3. Klicke **Build Model**
 ![Invocation Name](./screenshots/invocation_name_highlight.jpg)
 
 ### Code
 
-1. Überarbeite `const stationName = "<deine Station-Name>"`
-2. Überarbeite `const spokenStationName = "<deine ausgesprochene Station-Name>"`
+1. Passe `const stationName = "<dein Stations-Name>"` an:
+Tausche `<dein Station-Name>` mit dem Namen, unter dem man deinen Stream hören kann. d.h. `stream.laut.fm/<dein Stations-Name>`
 
-Tausche `<deine Station-Name>` mit der Name, die man deinen Stream hören kann. d.h. `stream.laut.fm/<deine Station-Name>`
-
-Tausche `<deine ausgesprochene Station-Name>` mit der Name, die Alexa ___sagen___ soll.
+2. Passe `const spokenStationName = "<dein ausgesprochener Stations-Name>"` an:
+Tausche `<dein ausgesprochener Stations-Name>` mit dem Namen, den Alexa ___sagen___ soll.
 
 3. Klicke **Save**
 4. Klicke **Deploy** 
@@ -40,45 +39,44 @@ Tausche `<deine ausgesprochene Station-Name>` mit der Name, die Alexa ___sagen__
 
 ### Distribution -> Skill Preview -> German
 
-1. Gib das **Public Name** ein. Diese Name wird im Skill-Store angezeigt
-2. Gib das **One Sentence Description** ein
-3. Gib das **Detailed Description** ein
-4. Gib das **Example Phrases** ein
+1. Gib unter **Public Name** den Namen ein, der im Skill-Store angezeigt werden soll.
+2. Gib eine kurze Beschreibung bei **One Sentence Description** ein.
+3. Gib eine detaillierte Beschreibung bei **Detailed Description** ein
+4. Gib mehrere **Example Phrases** ein, z.B.
 ```
-Alexa, öffne <deine ausgesprochene Station-Name>
-Alexa, starte <deine ausgesprochene Station-Name> 
+Alexa, öffne <dein ausgesprochener Stations-Name>
+Alexa, starte <dein ausgesprochener Stations-Name> 
 ```
-5. Lade das **Small Skill Icon** (108x108px PNG oder JPG) hoch
-6. Lade das **Large Skill Icon** (512x512px PNG oder JPG) hoch
-7. Gib die **Keywords** ein
+5. Lade das **Small Skill Icon** (108x108px PNG oder JPG) hoch.
+6. Lade das **Large Skill Icon** (512x512px PNG oder JPG) hoch.
+7. Gib die **Keywords** ein.
 8. Klicke **Save and continue**
 
 ### Distribution -> Privacy & Compliance
 
-1. Antworte diese Fragen wahr. Wenn du dies Muster benutzt, **ohne irgend was geändert zu haben**, dann darfst du die Antworten nach den unteren Bild eingeben.
-2. Gib die **Testing Instructions** ein
+1. Bitte beantworte die Fragen gewissenhaft. Wenn du diese Skill-Vorlage nach Anleitung **ohne zusätzliche Anpassungen** verwendet hast, kannst du die Antworten aus dem unteren Scrennshot benutzen.
+2. Passe diese Anweisung an und füge sie anschließend bei **Testing Instructions** ein:
 ```
-Starte den Stream indem Du sagst "Öffne <your spoken station name>"
+Starte den Stream, indem Du "Öffne <dein Stations-Name>" sagst.
 ```
 3. Klicke **Save and continue**
 ![Privacy & Compliance](./screenshots/distribution_screen_privacy_highlighted.jpg)
 
 ### Test
-
-Du soll den Skill einmal testen. Du kannst den Skill testen mit ein Echo-Gerät oder Alexa App auf deinen Handy. Um den **Development** Skill zu testen, muss du mit demselben Amazon-Konto, damit du den Skill im **Developer Console** bearbeitest, auf den Gerät einloggen.  
+Bitte teste den Skill. Das kannst du mit einem Amazon Echo oder mit der Alexa-App auf deinen Handy. Um den **Development** Skill zu testen, musst du dich mit demselben Amazon-Konto, mit dem du den Skill im **Developer Console** bearbeitest, auf deinem Test-Gerät einloggen.  
 
 ### Certification -> Validation
 
 1. Klicke **Run**
 ![Validation](./screenshots/validation_highlight.jpg)
-2. Bearbeite irgend angezeite Fehler
+2. Bearbeite alle angezeigten Fehler
 
-Wiederhole Schritte 1 und 2 bis es gibt keinen Fehler. Dannach mit diese Anleitung fortfahren.
+Wiederhole Schritte 1 und 2,  bis kein Fehler mehr gemeldet wird. Dann kannst du mit dieser Anleitung fortfahren.
 
 ### Certification -> Submission
 
-1. Gib ein optionales privates **Version message** ein
-2. Klicke **Submit for review**
+1. Gib eine (optionale) private Versions-Beschreibung bei **Version message** ein.
+2. Reiche deinen Skill mit einem Klick auf **Submit for review** ein.
 ![Submission](./screenshots/submission_highlight.jpg)
 
-Warte bis Amazon deinen Skill bestätigt oder ablehnt. Wenn sie der Skill ablehnen, sollen sie ein E-Mail mit dem Grund für die Ablehnung schicken. Wenn du die Fehler behoben hast, darfts du den Skill wieder submittieren.
+Jetzt musst du warten, bis Amazon deinen Skill bestätigt oder ablehnt. Falls sie den Skill ablehnen, solltest du eine E-Mail mit dem Grund für die Ablehnung bekommen. Wenn du alle Fehler behoben hast, kannst du den Skill erneut einreichen.
