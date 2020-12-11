@@ -4,13 +4,13 @@
  * session persistence, api calls, and more.
  * */
  
-const stationName = "<deine Station-Name>"
-const spokenStationName = "<deine ausgesprochene Station-Name>"
+const stationName = "<dein Stations-Name>"
+const spokenStationName = "<dein ausgesprochener Stations-Name>"
 
 const Alexa = require('ask-sdk-core');
 const messages = {
     continue:
-        'Ich mache weiter, wo wir beim letzten Mal aufgehört haben. ',
+        'Ich mache weiter, wo wir beim letzten Mal aufgehört haben.',
     help:
         'Du hörst einen Sender von laut f m',
     pause:
@@ -24,7 +24,7 @@ const messages = {
     unable:
         'Das kann ich leider nicht.',
     fallback:
-        'Ich weiß nicht, wie ich das schaffen soll. Bitte versuch was anders'
+        'Ich weiß nicht, wie ich das schaffen soll. Bitte versuch was anderes'
 };
 
 const url = "https://stream.laut.fm/" + stationName + "?ref=alexa-own-" + stationName;
