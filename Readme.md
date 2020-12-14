@@ -26,11 +26,11 @@
 
 ### Code
 
-1. Passe `const stationName = "<dein Stations-Name>"` an:
-2. Passe `const spokenStationName = "<dein ausgesprochener Stations-Name>"` an:
+1. Passe `const stationName = "<dein Sendername>"` an:
+2. Passe `const spokenStationName = "<dein ausgesprochener Sendername>"` an:
 
-Ersetze `<dein Station-Name>` mit dem Namen, unter dem man deinen Stream hören kann. d.h. `stream.laut.fm/<dein Stations-Name>`.
-Ersetze `<dein ausgesprochener Stations-Name>` mit dem Namen, den Alexa ___sagen___ soll.
+Ersetze `<dein Station-Name>` mit dem Namen, unter dem man deinen Stream hören kann. d.h. `stream.laut.fm/<dein Sendername>`.
+Ersetze `<dein ausgesprochener Sendername>` mit dem Namen, den Alexa ___sagen___ soll.
 
 3. Klicke auf **Save**
 4. Klicke auf **Deploy** 
@@ -44,8 +44,8 @@ Ersetze `<dein ausgesprochener Stations-Name>` mit dem Namen, den Alexa ___sagen
 3. Gib eine detaillierte Beschreibung bei **Detailed Description** ein
 4. Gib mehrere **Example Phrases** ein, z.B.
 ```
-Alexa, öffne <dein ausgesprochener Stations-Name>
-Alexa, starte <dein ausgesprochener Stations-Name> 
+Alexa, öffne <dein ausgesprochener Sendername>
+Alexa, starte <dein ausgesprochener Sendername> 
 ```
 5. Lade das **Small Skill Icon** (108x108px PNG oder JPG) hoch.
 6. Lade das **Large Skill Icon** (512x512px PNG oder JPG) hoch.
@@ -57,7 +57,7 @@ Alexa, starte <dein ausgesprochener Stations-Name>
 1. Bitte beantworte die Fragen gewissenhaft. Wenn du diese Skill-Vorlage nach Anleitung **ohne zusätzliche Anpassungen** verwendet hast, kannst du die Antworten aus dem unteren Scrennshot benutzen.
 2. Passe diese Anweisung an und füge sie anschließend bei **Testing Instructions** ein:
 ```
-Starte den Stream, indem Du "Öffne <dein Stations-Name>" sagst.
+Starte den Stream, indem Du "Öffne <dein Sendername>" sagst.
 ```
 3. Klicke auf**Save and continue**
 ![Privacy & Compliance](./screenshots/distribution_screen_privacy_highlighted.jpg)
