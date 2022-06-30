@@ -18,7 +18,7 @@ const messages = {
     stop:
         'Bis bald!',
     welcome:
-        'Willkommen, du hörst' + spokenStationName,
+        'Willkommen, du hörst ' + spokenStationName,
     more:
         'Wenn Du mehr Sender hören willst, besuch uns auf laut punkt <say-as interpret-as="cardinal">FM</say-as>.',
     unable:
